@@ -1,0 +1,23 @@
+<svg
+  className="tick-badge"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+  aria-hidden="true"
+>
+  <path
+    d="M12 2.5L14.2 4.2L17 3.9L18.3 6.6L20.9 7.8L20.6 10.6L22.3 12.8L20.6 15L20.9 17.8L18.3 19L17 21.7L14.2 21.4L12 23.1L9.8 21.4L7 21.7L5.7 19L3.1 17.8L3.4 15L1.7 12.8L3.4 10.6L3.1 7.8L5.7 6.6L7 3.9L9.8 4.2L12 2.5Z"
+    stroke="#24439B"
+    strokeWidth="1.8"
+    strokeLinejoin="round"
+  />
+  <path
+    d="M8.2 12.8L10.7 15.2L15.8 10.2"
+    stroke="#24439B"
+    strokeWidth="1.8"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  />
+</svg>
