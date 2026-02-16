@@ -11,6 +11,8 @@
   --text: #171a24;
   --brand: #24439b;
   --page-x: clamp(40px, 8vw, 120px);
+  --font-family: "Plus Jakarta Sans", "Segoe UI", Roboto, -apple-system, sans-serif;
+
 }
 
 html,
@@ -29,6 +31,8 @@ body,
 .app-root {
    min-height: 100vh;
    gap: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .app-header {
@@ -113,16 +117,16 @@ body,
   align-items: center;
   justify-content: flex-start;
   gap: 8px;
-  padding: 8px 12px;
+  padding: 2px 8px;
   border: 1px solid var(--border);
   border-radius: 18px;
   background: #c4d1e9;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 .home-verified-text p {
   margin: 0;
   color: var(--brand);
-  font-size: clamp(1rem, 1.4rem, 2rem);
+  font-size: 1rem;
   font-weight: 600;
 }
 .tick-icon{
@@ -132,23 +136,69 @@ body,
 .home-content {
   padding-left: var(--page-x);
   padding-right: var(--page-x);
-  padding-top: 10rem;
+  padding-top: clamp(2rem, 6vw, 6rem);
 }
 .home-content .title{
   font-size: clamp(2rem, 4vw, 3.75rem);
   font-weight: 700;
-  line-height: 1.1;
+  font-family: var(--font-family);
 }
 .title-blue {
-  color: 'black';
+  color: black;
 }
 .title-white {
   color: var(--brand);
 }
 .connecting-homeowners{
-  color: #727171;
+  color: #6d7a8a;
   font-size: 20px;
   font-weight: 500;
   line-height: 1.1;
   padding-top: 12px;
+  font-family: var(--font-family);
+}
+.home-layout {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: clamp(24px, 4vw, 56px);
+}
+.home-left {
+  flex: 1 1 50%;
+  min-width: 0;
+  padding-top: 8rem;
+}
+.home-right {
+  flex: 1 1 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+.hero-image {
+  width: 100%;
+  border-radius: 16px;
+  border: 7px solid #fff;
+  display: block;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.18);
+}
+
+
+/** ipad screen size */
+@media (max-width: 1024px) {
+  .home-layout {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .home-left {
+    order: 1;
+    width: 100%;
+    padding-top: 0;
+  }
+  .home-right {
+    order: 2;
+    width: 100%;
+    justify-content: center;
+  }
+  .hero-image{
+    width: 100%;
+  }
 }
