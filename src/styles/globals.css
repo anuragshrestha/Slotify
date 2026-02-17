@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #f2f3f6;
+  --panel: #f7f8fb;
+  --border: #e1e4ea;
+  --text: #171a24;
+  --brand: #24439b;
+  --page-x: clamp(40px, 8vw, 120px);
+  --font-family: "Plus Jakarta Sans", "Segoe UI", Roboto, -apple-system, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+  font-family: var(--font-family);
+  background: var(--bg);
+}

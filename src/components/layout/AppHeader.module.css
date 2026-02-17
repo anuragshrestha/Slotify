@@ -1,0 +1,84 @@
+.header {
+  width: 100%;
+  min-height: 72px;
+  display: flex;
+  padding: 8px var(--page-x);
+  justify-content: space-between;
+  align-items: center;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.brandMark {
+  width: 34px;
+  height: 34px;
+  position: relative;
+  display: inline-block;
+}
+
+.markSquare {
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  border-radius: 2px;
+  background: var(--brand);
+}
+
+.markSquareTop {
+  top: 0;
+  left: 0;
+}
+
+.markSquareMiddle {
+  top: 0;
+  left: 12px;
+}
+
+.markSquareBottom {
+  top: 12px;
+  left: 12px;
+}
+
+.title {
+  font-size: clamp(1.35rem, 1.6vw, 2rem);
+  font-weight: 700;
+  letter-spacing: -0.02rem;
+  color: var(--brand);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: clamp(14px, 1.6vw, 28px);
+}
+
+.navButton {
+  border: 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  color: var(--text);
+  background: transparent;
+  border-radius: 12px;
+  padding: 0.6rem 1.1rem;
+}
+
+.navButton:hover {
+  background: var(--border);
+}
+
+.signupButton {
+  color: var(--panel);
+  background: var(--brand);
+}
+
+.signupButton:hover {
+  background: #3259c5;
+}
