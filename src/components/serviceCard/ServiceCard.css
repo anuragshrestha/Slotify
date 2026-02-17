@@ -1,0 +1,29 @@
+.service-card {
+  border-radius: 12px;
+  border: 8px solid #fff;
+  background: #fff;
+  padding: 2px;
+}
+.service-image {
+  width: 100%;
+  aspect-ratio: 16/ 10;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+}
+.service-type {
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  font-weight: 700;
+  font-family: var(--font-family);
+}
+.service-text {
+  font-size: 1.1rem;
+  padding: 0.5rem;
+ padding-left: 1rem;
+  color: gray;
+  font-weight: 500;
+  font-family: var(--font-family);
+}
+
