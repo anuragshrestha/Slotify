@@ -3,6 +3,13 @@
   border: 8px solid #fff;
   background: #fff;
   padding: 2px;
+  cursor: pointer;
+  transform: scale(1);
+  box-shadow: 0 0 0 rgba(202, 200, 200, 0);
+}
+.service-card:hover{
+  transform: scale(1.03);
+  box-shadow: 0 12px 28px rgba(202, 200, 200, 0.12);
 }
 .service-image {
   width: 100%;
