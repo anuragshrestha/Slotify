@@ -1,0 +1,94 @@
+.howitworks-layout{
+
+    justify-content: center;
+    align-items: center;
+    padding-left: var(--page-x);
+    padding-right: var(--page-x);
+    padding-bottom: 2rem;
+}
+.howitworks-text{
+   text-align: center;
+   font-size: 2.5rem;
+   font-weight: 700;
+   font: bold;
+}
+.lookingtohire{
+    text-align: center;
+    padding-top: 0.8rem;
+    font-size: 1.1rem;
+    font-weight: 400;
+    font-family: var(--font-family);
+    color: var(--blurColor);
+}
+.owners-professionals{
+    display: flex;
+    flex-direction: row;
+    padding-top: 2rem;
+    gap: 2rem;
+}
+.owner-layout{
+    flex: 1 1 32%;
+}.professional-layout{
+    flex: 1 1 32%;
+}
+.image{
+    width: 3rem;
+    height: 3rem;
+    padding: 8px;
+    border:  solid #fff;
+    border-radius: 12px;
+    border-color: #e2e1e1;
+}
+.homeowners-text{
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--brand);
+}
+.professionals-text{
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+.description-layout{
+    padding: 0.5rem;
+    padding-top: 1rem;
+}
+.description-innerlayout{
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+}
+.description{
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+.homeowner-number,
+.professional-number {
+  width: 2.5rem;
+  height: 2.5rem;
+  min-width: 2.5rem;
+  min-height: 2.5rem;
+  flex: 0 0 2.5rem;  
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: #fff;
+}
+.homeowner-number { background: var(--brand); }
+.professional-number { background: #000; }
+
+.title{
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+.description span{
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--blurColor);
+}
+
+@media (max-width: 1200px) {
+    .owners-professionals{
+        flex-direction: column;
+    }
+}
