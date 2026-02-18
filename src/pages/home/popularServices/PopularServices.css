@@ -16,7 +16,7 @@
 
 .connected-text {
   margin-top: 0.5rem;
-  color: #626f85;
+  color: var(--blurColor);
   font-size: clamp(1rem, 1.2vw, 1.35rem);
   font-weight: 500;
 }
