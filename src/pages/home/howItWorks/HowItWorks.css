@@ -4,7 +4,7 @@
     align-items: center;
     padding-left: var(--page-x);
     padding-right: var(--page-x);
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
 }
 .howitworks-text{
    text-align: center;
@@ -86,7 +86,16 @@
     font-weight: 500;
     color: var(--blurColor);
 }
-
+.bottom {
+    justify-content: center;
+    display: flex;
+}
+.bottom p {
+    color: var(--blurColor);
+    font-size: 1rem;
+    font-weight: 500;
+    padding-top: 2rem;
+}
 @media (max-width: 1200px) {
     .owners-professionals{
         flex-direction: column;

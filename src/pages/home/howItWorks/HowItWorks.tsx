@@ -65,6 +65,11 @@ function HowItWorks() {
           </div>
         </div>
       </div>
+      <div className="bottom">
+        <p>
+          @ 2026 All rights reserved by Anurag Shrestha
+        </p>
+      </div>
     </div>
   );
 }
