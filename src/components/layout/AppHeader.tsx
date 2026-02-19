@@ -1,10 +1,14 @@
 import styles from "./AppHeader.module.css";
+import { useNavigate } from "react-router-dom";
 
 type AppHeaderProps = {
   brandName?: string;
 };
 
 function AppHeader({ brandName = "Slotify" }: AppHeaderProps) {
+
+  const navigate = useNavigate();
+
   return (
     <header className={styles.header}>
       <div className={styles.brand}>
@@ -20,7 +24,7 @@ function AppHeader({ brandName = "Slotify" }: AppHeaderProps) {
         <button className={styles.navButton} type="button">
           Login
         </button>
-        <button className={`${styles.navButton} ${styles.signupButton}`} type="button">
+        <button className={`${styles.navButton} ${styles.signupButton}`} type="button" onClick={() => navigate("/signup")}>
           Signup
         </button>
       </nav>
