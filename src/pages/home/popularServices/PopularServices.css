@@ -1,0 +1,41 @@
+.popular-service {
+  background: var(--border);
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  padding-left: var(--page-x);
+  padding-right: var(--page-x);
+  padding-top: clamp(2rem, 4vw, 4rem);
+  padding-bottom: clamp(2rem, 4vw, 4rem);
+}
+
+.popular-title {
+  font-size: clamp(2rem, 3vw, 3rem);
+  font-weight: 700;
+  color: var(--text);
+}
+
+.connected-text {
+  margin-top: 0.5rem;
+  color: var(--blurColor);
+  font-size: clamp(1rem, 1.2vw, 1.35rem);
+  font-weight: 500;
+}
+
+.services-grid {
+  padding-top: 2rem;
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+@media (max-width: 1200px) {
+  .services-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 700px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}
