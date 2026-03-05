@@ -1,9 +1,12 @@
-import "./SignupPage.css";
+import "./SigninPage.css";
 import tickIcon from "../../assets/icons/whiteTickIcon.svg";
 import lockIcon from "../../assets/icons/whiteLockIcon.svg";
 import cardIcon from "../../assets/icons/whiteCardIcon.svg";
+import { useState } from "react";
 
-function SignupPage() {
+function SigninPage() {
+
+  const [isContractor, setIsContractor] = useState(false);
   return (
     <div className="signup-page">
       <div className="brand">
@@ -43,6 +46,15 @@ function SignupPage() {
         <section className="right-section">
           <div className="inner-section">
             <p className="welcome-text">Welcome Back</p>
+            <p className="please-text">Please enter your details to signin</p>
+            <div className="user-toggle">
+              <button className="user-button">
+                  I am a User
+              </button>
+              <button className="contractor-button">
+                  I am a Contractor
+              </button>
+            </div>
           </div>
         </section>
       </main>
@@ -50,4 +62,4 @@ function SignupPage() {
   );
 }
 
-export default SignupPage;
+export default SigninPage;

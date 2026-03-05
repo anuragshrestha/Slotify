@@ -21,10 +21,10 @@ function AppHeader({ brandName = "Slotify" }: AppHeaderProps) {
       </div>
 
       <nav className={styles.nav} aria-label="Primary">
-        <button className={styles.navButton} type="button">
+        <button className={styles.navButton} type="button" onClick={() => navigate("/signin")}>
           Login
         </button>
-        <button className={`${styles.navButton} ${styles.signupButton}`} type="button" onClick={() => navigate("/signup")}>
+        <button className={`${styles.navButton} ${styles.signupButton}`} type="button" >
           Signup
         </button>
       </nav>
