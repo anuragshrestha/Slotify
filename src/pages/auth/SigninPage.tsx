@@ -48,10 +48,10 @@ function SigninPage() {
             <p className="welcome-text">Welcome Back</p>
             <p className="please-text">Please enter your details to signin</p>
             <div className="user-toggle">
-              <button className="user-button">
+              <button className={`user-button ${!isContractor ? "active" : ""}`} onClick={() => setIsContractor(false)}>
                   I am a User
               </button>
-              <button className="contractor-button">
+              <button className={`user-button ${isContractor ? "active" : ""}`} onClick={() => setIsContractor(true)}>
                   I am a Contractor
               </button>
             </div>

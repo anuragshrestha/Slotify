@@ -140,29 +140,28 @@
 }
 .user-toggle{
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
-  background: var(--border);
-  margin-left: 5%;
-  margin-right: 5%;
-  height: 3rem;
-  margin-top: 1rem;
+  width: 90%;
+  padding: 4px;
   border-radius: 12px;
-  cursor: pointer;
+  background: #f2f2f2;
+ margin: 10% 4% 0;
 }
 .user-button{
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex: 50%;
-    cursor: pointer;
+ flex: 1;
+ height: 40px;
+ margin: 0;
+ border: 0;
+ border-radius: 12px;
+ background: transparent;
+ color: #666;
+ font-size: 1rem;
+ font-weight: 600;
+   cursor: pointer;
+ 
 }
-.contractor-button{
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex: 50%;
-    cursor: pointer;
+.user-button.active{
+  background: #fff;
+  color: var(--brand);
 }
 
 /* @media (max-width: 1460px) {
