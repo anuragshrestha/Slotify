@@ -5,7 +5,6 @@ import cardIcon from "../../assets/icons/whiteCardIcon.svg";
 import { useState } from "react";
 
 function SigninPage() {
-
   const [isContractor, setIsContractor] = useState(false);
   return (
     <div className="signup-page">
@@ -28,16 +27,31 @@ function SigninPage() {
           </p>
           <ul className="benefits">
             <li className="benefits-item">
-              <img src={tickIcon} alt="" aria-hidden='true' className="tick-icon" />
+              <img
+                src={tickIcon}
+                alt=""
+                aria-hidden="true"
+                className="tick-icon"
+              />
               <span>Verified Contractors &amp; Businesses.</span>
             </li>
 
             <li className="benefits-item">
-              <img src={lockIcon} alt="" aria-hidden="true" className="tick-icon" />
+              <img
+                src={lockIcon}
+                alt=""
+                aria-hidden="true"
+                className="tick-icon"
+              />
               End-to-End Encrypted Communication.
             </li>
             <li className="benefits-item">
-              <img src={cardIcon} alt="" aria-hidden="true" className="tick-icon" />
+              <img
+                src={cardIcon}
+                alt=""
+                aria-hidden="true"
+                className="tick-icon"
+              />
               Secure Milestone-Based Payments.
             </li>
           </ul>
@@ -47,13 +61,25 @@ function SigninPage() {
           <div className="inner-section">
             <p className="welcome-text">Welcome Back</p>
             <p className="please-text">Please enter your details to signin</p>
-            <div className="user-toggle">
-              <button className={`user-button ${!isContractor ? "active" : ""}`} onClick={() => setIsContractor(false)}>
+            <div style={{ margin: "10% 4% 0" }}>
+              <div className="user-toggle">
+                <button
+                  className={`user-button ${!isContractor ? "active" : ""}`}
+                  onClick={() => setIsContractor(false)}
+                >
                   I am a User
-              </button>
-              <button className={`user-button ${isContractor ? "active" : ""}`} onClick={() => setIsContractor(true)}>
+                </button>
+                <button
+                  className={`user-button ${isContractor ? "active" : ""}`}
+                  onClick={() => setIsContractor(true)}
+                >
                   I am a Contractor
-              </button>
+                </button>
+              </div>
+              <p className="email-address">Email Address</p>
+              <div className="email-input">
+                <input type="email" placeholder="name@domain.com"/>
+              </div>
             </div>
           </div>
         </section>

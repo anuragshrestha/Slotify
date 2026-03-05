@@ -134,34 +134,43 @@
   text-align: center;
   padding-top: 30px;
 }
-.please-text{
+.please-text {
   text-align: center;
   color: gray;
 }
-.user-toggle{
+.user-toggle {
   display: flex;
-  width: 90%;
+  width: 100%;
   padding: 4px;
   border-radius: 12px;
   background: #f2f2f2;
- margin: 10% 4% 0;
 }
-.user-button{
- flex: 1;
- height: 40px;
- margin: 0;
- border: 0;
- border-radius: 12px;
- background: transparent;
- color: #666;
- font-size: 1rem;
- font-weight: 600;
-   cursor: pointer;
- 
+.user-button {
+  flex: 1;
+  height: 40px;
+  margin: 0;
+  border: 0;
+  border-radius: 12px;
+  background: transparent;
+  color: #666;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
 }
-.user-button.active{
+.user-button.active {
   background: #fff;
   color: var(--brand);
+}
+.email-address {
+  margin-top: 1rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.email-input {
+  border: 1px solid rgb(215, 212, 212);
+  border-radius: 12px;
+  padding: 0.75rem 1rem;
+  margin-top: 0.3rem;
 }
 
 /* @media (max-width: 1460px) {
@@ -176,13 +185,13 @@
 } */
 
 @media (max-width: 1024px) {
-    .signup-layout{
-        grid-template-columns: 1fr;
-    }
-    .left-section{
-        display: none;
-    }
-    .right-section {
-        padding: 24px 16px;
-    }
+  .signup-layout {
+    grid-template-columns: 1fr;
+  }
+  .left-section {
+    display: none;
+  }
+  .right-section {
+    padding: 24px 16px;
+  }
 }
