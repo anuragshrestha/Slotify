@@ -8,6 +8,8 @@ import { useState } from "react";
 
 function SigninPage() {
   const [isContractor, setIsContractor] = useState(false);
+  const [emailAddress, setEmailAddress] = useState('');
+  const [password, setPassword] = useState('');
   return (
     <div className="signup-page">
       <div className="brand">
@@ -86,7 +88,7 @@ function SigninPage() {
                   aria-hidden="true"
                   className="input-icon"
                 />
-                <input type="email" placeholder="name@domain.com" />
+                <input type="email" value={emailAddress} onChange={(e) => setEmailAddress(e.target.value)} placeholder="name@domain.com" />
               </div>
               <div className="password-outer">
               <p className="password">Password</p>
@@ -100,7 +102,7 @@ function SigninPage() {
                   aria-hidden="true"
                   className="input-icon"
                 />
-                <input type="password" placeholder="Enter your password" />
+                <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Enter your password" />
               </div>
               <button className="signin-button">
                 Signin
