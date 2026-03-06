@@ -2,6 +2,8 @@ import "./SigninPage.css";
 import tickIcon from "../../assets/icons/whiteTickIcon.svg";
 import lockIcon from "../../assets/icons/whiteLockIcon.svg";
 import cardIcon from "../../assets/icons/whiteCardIcon.svg";
+import emailIcon from "../../assets/icons/emailIcon.svg";
+import inputLockIcon from "../../assets/icons/inputLockIcon.svg";
 import { useState } from "react";
 
 function SigninPage() {
@@ -78,7 +80,38 @@ function SigninPage() {
               </div>
               <p className="email-address">Email Address</p>
               <div className="email-input">
-                <input type="email" placeholder="name@domain.com"/>
+                <img
+                  src={emailIcon}
+                  alt=""
+                  aria-hidden="true"
+                  className="input-icon"
+                />
+                <input type="email" placeholder="name@domain.com" />
+              </div>
+              <div className="password-outer">
+              <p className="password">Password</p>
+              <p className="forgot-password">Forgot Password?</p>
+              </div>
+
+              <div className="password-input">
+                <img
+                  src={inputLockIcon}
+                  alt=""
+                  aria-hidden="true"
+                  className="input-icon"
+                />
+                <input type="password" placeholder="Enter your password" />
+              </div>
+              <button className="signin-button">
+                Signin
+              </button>
+              <div className="create-account">
+                <span className="new-slotify">
+                  New to Slotify?
+                </span>
+                <button className="create-account-button">
+                  Create Account
+                </button>
               </div>
             </div>
           </div>
