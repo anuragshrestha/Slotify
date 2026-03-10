@@ -1,4 +1,4 @@
-import "./SignupPage.css";
+import "./SigninPage.css";
 import tickIcon from "../../assets/icons/whiteTickIcon.svg";
 import lockIcon from "../../assets/icons/whiteLockIcon.svg";
 import cardIcon from "../../assets/icons/whiteCardIcon.svg";
@@ -7,10 +7,10 @@ import inputLockIcon from "../../assets/icons/inputLockIcon.svg";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-function SignupPage() {
+function SigninPage() {
   const [isContractor, setIsContractor] = useState(false);
-  const [emailAddress, setEmailAddress] = useState("");
-  const [password, setPassword] = useState("");
+  const [emailAddress, setEmailAddress] = useState('');
+  const [password, setPassword] = useState('');
   const navigate = useNavigate();
 
   return (
@@ -66,8 +66,8 @@ function SignupPage() {
         {/** right section */}
         <section className="right-section">
           <div className="inner-section">
-            <p className="welcome-text">Welcome to Slotify</p>
-            <p className="please-text">Please create your account below</p>
+            <p className="welcome-text">Welcome Back</p>
+            <p className="please-text">Please enter your details to signin</p>
             <div style={{ margin: "10% 4% 0" }}>
               <div className="user-toggle">
                 <button
@@ -91,15 +91,11 @@ function SignupPage() {
                   aria-hidden="true"
                   className="input-icon"
                 />
-                <input
-                  type="email"
-                  value={emailAddress}
-                  onChange={(e) => setEmailAddress(e.target.value)}
-                  placeholder="name@domain.com"
-                />
+                <input type="email" value={emailAddress} onChange={(e) => setEmailAddress(e.target.value)} placeholder="name@domain.com" />
               </div>
               <div className="password-outer">
-                <p className="password">Password</p>
+              <p className="password">Password</p>
+              <p className="forgot-password">Forgot Password?</p>
               </div>
 
               <div className="password-input">
@@ -109,18 +105,17 @@ function SignupPage() {
                   aria-hidden="true"
                   className="input-icon"
                 />
-                <input
-                  type="password"
-                  value={password}
-                  onChange={(e) => setPassword(e.target.value)}
-                  placeholder="Enter your password"
-                />
+                <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Enter your password" />
               </div>
-              <button className="signin-button">Signup</button>
+              <button className="signin-button">
+                Signin
+              </button>
               <div className="create-account">
-                <span className="new-slotify">Already have an account?</span>
-                <button className="create-account-button" onClick={() => navigate('/signin')}>
-                  Sign In
+                <span className="new-slotify">
+                  New to Slotify?
+                </span>
+                <button className="create-account-button" onClick={() => navigate('/signup')}>
+                  Create Account
                 </button>
               </div>
             </div>
@@ -131,4 +126,4 @@ function SignupPage() {
   );
 }
 
-export default SignupPage;
+export default SigninPage;
