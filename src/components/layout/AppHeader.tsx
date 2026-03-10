@@ -24,7 +24,7 @@ function AppHeader({ brandName = "Slotify" }: AppHeaderProps) {
         <button className={styles.navButton} type="button" onClick={() => navigate("/signin")}>
           Login
         </button>
-        <button className={`${styles.navButton} ${styles.signupButton}`} type="button" >
+        <button className={`${styles.navButton} ${styles.signupButton}`} type="button" onClick={() => navigate('/signup')}>
           Signup
         </button>
       </nav>
